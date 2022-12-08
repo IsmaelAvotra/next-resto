@@ -1,0 +1,32 @@
+.footer {
+  background-color: #fefefe;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer .logo svg {
+  font-size: 1.5rem;
+}
+
+.footer .logo p {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.footer .socials {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer .socials svg {
+  font-size: 1.2rem;
+}

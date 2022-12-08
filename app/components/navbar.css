@@ -1,0 +1,78 @@
+.navbar {
+  background-color: #fefefe;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.2rem 3rem;
+  box-shadow: 3px 1px 5px #191919;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.navbar .logo svg {
+  font-size: 1.5rem;
+}
+
+.navbar .logo p {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.navbar .links {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.navbar .socials {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.menu {
+  display: none;
+}
+
+.navbar .socials svg,
+.menu svg {
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 850px) {
+  .navbar .links {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .navbar {
+    padding: 0.2rem 1rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .navbar {
+    padding: 0.2rem 0.5rem;
+  }
+  .navbar .logo {
+    gap: 0.2rem;
+  }
+  .navbar .logo p {
+    font-size: 0.9rem;
+  }
+  .navbar .logo svg {
+    font-size: 1.2rem;
+  }
+  .navbar .socials svg,
+  .menu svg {
+    font-size: 1rem;
+  }
+}

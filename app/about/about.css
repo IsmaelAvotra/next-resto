@@ -1,0 +1,134 @@
+.about-content {
+  display: flex;
+  gap: 2rem;
+}
+
+.about-content .left {
+  flex: 1;
+}
+
+.about-content .left svg {
+  font-size: 1.2rem;
+}
+
+.about-content .left p {
+  margin-right: 8rem;
+  margin-bottom: 2rem;
+}
+
+.about-content .left .quality {
+  margin-bottom: 3rem;
+}
+
+.about-content .left img {
+  width: 600px;
+  height: 450px;
+}
+
+.about-content .right {
+  flex: 1;
+}
+
+.about-content h3 {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.chef-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+.chef-content .info {
+  padding: 0.5rem;
+}
+
+.about-content p {
+  font-size: 0.9rem;
+}
+
+.about-content .right .description {
+  margin-bottom: 2rem;
+}
+
+.chef-content .info span {
+  font-weight: 600;
+  margin-right: 0.2rem;
+  text-transform: capitalize;
+}
+
+.chef-content img {
+  width: 100%;
+  height: 12rem;
+  border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.chef {
+  background-color: #fefefe;
+  border-radius: 0.25rem;
+  box-shadow: 2px 1px 4px #191919;
+}
+
+.chef-content .socials {
+  text-align: center;
+}
+
+.chef-content .socials svg {
+  font-size: 1.4rem;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.image-team img {
+  width: 100%;
+  height: 450px;
+}
+
+@media screen and (max-width: 1400px) {
+  .about-content .left img {
+    width: 500px;
+    height: 400px;
+  }
+  .about-content .left p {
+    margin-right: 4rem;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .about-content .left img {
+    width: 450px;
+    height: 350px;
+  }
+}
+@media screen and (max-width: 1220px) {
+  .about-content .left img,
+  .about-content .right img {
+    width: 100%;
+    height: 100%;
+  }
+  .about-content {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .about-content h3 {
+    font-size: 1.2rem;
+  }
+  .about-content .left p {
+    margin-right: 0rem;
+  }
+  .chef-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about-content p {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 420px) {
+  .chef-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
