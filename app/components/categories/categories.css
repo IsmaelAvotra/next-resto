@@ -1,0 +1,71 @@
+.categories {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.categories .category {
+  display: grid;
+  place-items: center;
+  width: 6rem;
+  height: 6rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: #a0e8af;
+  transform: scale(0.9);
+  transition: 0.5s;
+  cursor: pointer;
+  border: 1px solid #052f5f;
+}
+
+.categories .category:hover {
+  transform: scale(0.95);
+}
+
+.category-italian,
+.category-korean,
+.category-thai,
+.category-japanese {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.categories .category svg {
+  font-size: 1.5rem;
+  color: #052f5f;
+}
+
+.categories .category p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #052f5f;
+}
+
+@media screen and (max-width: 850px) {
+  .categories {
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .categories {
+    gap: 0.5rem;
+  }
+  .categories .category {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .categories {
+    gap: 0.3rem;
+  }
+  .categories .category {
+    width: 4.3rem;
+    height: 4.3rem;
+  }
+}

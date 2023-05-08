@@ -1,15 +1,11 @@
-import './globals.css'
-import Navbar from './components/navbar'
-import Categories from './components/categories'
-import Footer from './components/footer'
+import "./globals.css";
+import Navbar from "./components/navbar/navbar";
+import Categories from "./components/categories/categories";
+import Footer from "./components/footer/footer";
 
 export default function RootLayout({ children }) {
   return (
-    <html lang='en'>
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.jsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
+    <html lang="en">
       <head />
       <body>
         <Navbar />
@@ -18,5 +14,5 @@ export default function RootLayout({ children }) {
         <Footer />
       </body>
     </html>
-  )
+  );
 }

@@ -1,0 +1,98 @@
+.navbar {
+  background-color: #052f5f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.2rem 3rem;
+  box-shadow: 1px 1px 2px #191919;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  color: #fefefe;
+}
+
+.navbar .logo svg {
+  font-size: 2rem;
+}
+
+.navbar .logo p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .links {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.navbar .links a {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fefefe;
+  transition: 0.4s;
+}
+
+.navbar .links a:hover {
+  color: #ffcf56;
+  transition: 0.2s ease-in-out;
+}
+
+.navbar .socials {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.menu {
+  display: none;
+}
+
+.navbar .socials svg,
+.menu svg {
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  color: #fefefe;
+}
+
+.navbar .socials svg:hover {
+  color: #ffcf56;
+  transition: 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 850px) {
+  .navbar .links {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .navbar {
+    padding: 0.2rem 1rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .navbar {
+    padding: 0.2rem 0.5rem;
+  }
+  .navbar .logo {
+    gap: 0.2rem;
+  }
+  .navbar .logo p {
+    font-size: 0.9rem;
+  }
+  .navbar .logo svg {
+    font-size: 1.2rem;
+  }
+  .navbar .socials svg,
+  .menu svg {
+    font-size: 1rem;
+  }
+}
