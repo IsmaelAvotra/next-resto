@@ -22,6 +22,7 @@
 
 .categories .category:hover {
   transform: scale(0.95);
+  border-color: #0b0033;
 }
 
 .category-italian,

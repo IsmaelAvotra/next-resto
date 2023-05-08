@@ -2,16 +2,20 @@ import React from "react";
 import "./Card.css";
 import { BiTimeFive } from "react-icons/bi";
 import { IoStarSharp, IoAdd } from "react-icons/io5";
+import { MdFavoriteBorder } from "react-icons/md";
 
 const Card = ({ image, title }) => {
   return (
     <div className="recipe-card">
       <div className="top">
-        <img src={image} alt={title} />
+        <div className="image">
+          <img src={image} alt={title} />
+          <MdFavoriteBorder />
+        </div>
       </div>
       <div className="bottom">
         <div className="title-star">
-          <h4>{title}</h4>
+          <h4>{title.slice(0, 50)}</h4>
           <div className="star">
             <span>
               <IoStarSharp />

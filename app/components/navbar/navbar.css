@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #052f5f;
+  background-color: #0b0033;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -42,9 +42,27 @@
   transition: 0.2s ease-in-out;
 }
 
+.navbar .socials .profile {
+  width: 2.5rem;
+  height: 2.5rem;
+  outline: 2px solid #ffcf56;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.profile img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
 .navbar .socials {
   display: flex;
-  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .menu {
