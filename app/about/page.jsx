@@ -6,8 +6,6 @@ import { AiOutlineInstagram } from 'react-icons/ai'
 import { FaPinterestSquare } from 'react-icons/fa'
 import { GiFlowerStar } from 'react-icons/gi'
 
-import teamMark from '../../public/teamMark.jpg'
-
 const About = () => {
   return (
     <section className='section'>
@@ -19,7 +17,7 @@ const About = () => {
             <p>
               <GiFlowerStar /> The best restaurant in town, hands down. The food
               is incredible, and the service is even better. You're sure to have
-              an amazing experience here.{' '}
+              an amazing experience here.
             </p>
             <Image
               src='/resto.jpg'
