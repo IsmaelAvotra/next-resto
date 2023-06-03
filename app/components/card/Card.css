@@ -12,6 +12,7 @@
 .recipe-card .top .image {
   position: relative;
   overflow: hidden;
+  height: 12rem;
 }
 
 .recipe-card .top svg {
