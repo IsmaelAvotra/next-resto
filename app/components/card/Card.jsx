@@ -36,7 +36,7 @@ const Card = ({ image, title }) => {
         <div className='price-add'>
           <p>50 DH</p>
           <button>
-            Add <IoAdd />{' '}
+            Add <IoAdd />
           </button>
         </div>
       </div>
